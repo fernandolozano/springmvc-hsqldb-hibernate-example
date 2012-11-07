@@ -1,5 +1,3 @@
-springmvc-hsqldb-hibernate-example
-================
 ## Simple project using Spring MVC (using annotation), hsqldb, maven application
 
 ## Installation
