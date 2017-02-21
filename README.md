@@ -1,36 +1,28 @@
-## Simple project using Spring MVC (using annotation), hsqldb, maven application
+springmvc-hsqldb-hibernate-example
+-------------------
+A example project with Spring MVC application using Hibernate and HSQL.
 
-## Installation
+To get the code:
+-------------------
+Clone the repository:
 
-#### Build project and import into Eclipse
+    $ git clone git://github.com/fernandolozano/springmvc-hsqldb-hibernate-example.git
 
-```
-$mvn clean package
-```
+If this is your first time using Github, review http://help.github.com to learn the basics.
 
-Then import to your favourite IDE (mine is Eclipse)
+To run the application:
+-------------------	
+From the command line with Maven:
 
-```
-$mvn eclipse:eclipse
-```
+    $ cd spring-mvc-template-project
+	$ mvn package
+	$ mvn tomcat:run
 
-then from Eclipse, File->Import
+or
 
-#### Build and deploy using Maven to Apache Tomcat
+In your preferred IDE such as Eclipse or IDEA:
 
-To actually run it just use the supplied script
+* Import spring-mvc-template-project as a Maven Project
+* Drag-n-drop the project onto the Servlet 2.5 or > Server to run, such as Tomcat.
 
-```
-build-and-deploy.sh
-```
-Start Tomcat, then point your browser to [http://localhost:8080/springmvc-hsqldb-hibernate-example/](http://localhost:8080/springmvc-hsqldb-hibernate-example/)
-
-    #!/bin/bash
-    mvn clean package
-    # NOTE: edit this to suite your deployment environment
-    export DEPLOYMENT_DIR=$TOMCAT_HOME/webapps
-    cp target/springmvc-hsqldb-hibernate-example.war $DEPLOYMENT_DIR
-
-## Author
-
-[Burin Choomnuan](https://github.com/agilecoders)
+Access the deployed web application at: http://localhost:8080/springmvc-hsqldb-hibernate-example/
